@@ -2,3 +2,5 @@ Here is a list of modules needed to make the mini project accessible:
 OS
 rich (only rich.console will be needed)
 math
+
+You will need to run Shape_tester.py to run the project, not Shape_calculator.py.
