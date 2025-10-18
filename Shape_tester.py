@@ -240,9 +240,13 @@ def main():
             raise TypeError("You can only write a number.")
     elif first == "triangular prism":
         one = input("Enter the first side of the triangular prism: ")
+        clear_screen()
         two = input("Enter the second side of the triangular prism: ")
+        clear_screen()
         three = input("Enter the third side of the triangular prism: ")
+        clear_screen()
         height = input("Enter the height of the triangular prism: ")
+        clear_screen()
 
         if isfloat(one) and isfloat(two) and isfloat(three) and isfloat(height):
             clear_screen()
@@ -277,7 +281,9 @@ def main():
                 raise TypeError("You can only write \"Display Info\", \"Volume\", \"Lateral Surface Area\", \"Surface Area\", \"Base Area\", or \"Perimeter\".")
         else:
             raise TypeError("You can only write a number.")
-
+    else:
+        raise ValueError(f"No shape found named {first}. Check the list to see if your shape is there, or check if you have misspeled the shape.")
+        
 def main2():
 
     first = input("Enter The Shape that you would like to measure: (type \"list\" if you would like a list of avaliable shapes.)\n").lower().strip()
@@ -505,9 +511,13 @@ def main2():
             raise TypeError("You can only write a number.")
     elif first == "triangular prism":
         one = input("Enter the first side of the triangular prism: ")
+        clear_screen()
         two = input("Enter the second side of the triangular prism: ")
+        clear_screen()
         three = input("Enter the third side of the triangular prism: ")
+        clear_screen()
         height = input("Enter the height of the triangular prism: ")
+        clear_screen()
 
         if isfloat(one) and isfloat(two) and isfloat(three) and isfloat(height):
             clear_screen()
@@ -542,5 +552,7 @@ def main2():
                 raise TypeError("You can only write \"Display Info\", \"Volume\", \"Lateral Surface Area\", \"Surface Area\", \"Base Area\", or \"Perimeter\".")
         else:
             raise TypeError("You can only write a number.")
+    else:
+        raise ValueError(f"No shape found named {first}. Check the list to see if your shape is there, or check if you have misspeled the shape.")
 
 main()
