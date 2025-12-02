@@ -144,7 +144,7 @@ def main():
         else:
             raise TypeError("You can only write a number.")
         
-    elif first == "Cube":
+    elif first == "cube":
         cub = input("Enter The length: ")
         
         if isfloat(cub):
@@ -177,7 +177,7 @@ def main():
         else:
             raise TypeError("You can only write a number.")
         
-    elif first == "Sphere":
+    elif first == "sphere":
         spher = input("Enter The radius: ")
         
         if isfloat(spher):
@@ -415,7 +415,7 @@ def main2():
         else:
             raise TypeError("You can only write a number.")
         
-    elif first == "Cube":
+    elif first == "cube":
         cub = input("Enter The length: ")
         
         if isfloat(cub):
@@ -448,7 +448,7 @@ def main2():
         else:
             raise TypeError("You can only write a number.")
         
-    elif first == "Sphere":
+    elif first == "sphere":
         spher = input("Enter The radius: ")
         
         if isfloat(spher):
@@ -556,3 +556,4 @@ def main2():
         raise ValueError(f"No shape found named {first}. Check the list to see if your shape is there, or check if you have misspeled the shape.")
 
 main()
+
